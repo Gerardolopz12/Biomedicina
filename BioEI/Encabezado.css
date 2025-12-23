@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background:rgba(61, 136, 175, 1);
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.nav {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+.btn-contacto {
+  background-color: #000;
+  color: #fff !important;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+/* ====== BOTÓN MENÚ HAMBURGUESA ====== */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+
+  .header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(61, 136, 175, 1);
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+}
+.navbar-toggler {
+  border-color: rgba(0,0,0,0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

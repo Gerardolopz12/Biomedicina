@@ -1,0 +1,94 @@
+body {
+margin: 0;
+background-color:rgba(201, 225, 233, 1) ;
+font-family: Arial, sans-serif;
+}
+
+
+/* Encabezado con imagen grande */
+.hero {
+width: 100%;
+height: 280px;
+background: url('../Images/menuP.jpg') center/cover no-repeat;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+padding-bottom: 20px;
+color: rgba(255, 255, 255, 0.896);
+font-size: 52px;
+font-weight: bold;
+text-shadow: 0 0 8px rgba(0,0,0,0.6);
+opacity: 0.7;
+
+}
+
+
+/* Contenedor vertical estilo "columna larga" */
+.gallery-wrapper {
+width: 100%;
+margin: auto;
+padding: 40px 0;
+}
+
+/* Estilos para h2 dentro de gallery-wrapper */
+.gallery-wrapper h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 40px auto;
+    max-width: 90%;
+    padding: 0 20px;
+    color:  rgba(0, 0, 0, 0.875);
+}
+
+/* Estilo de las imágenes tipo "bloques dispersos" */
+.img-item {
+    width: 250px;
+    height: auto;
+    margin: 40px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+/* Contenedor para filas de imágenes */
+.row-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 20px 0;
+}
+
+/* Ajuste: cuando estén dentro de .row-images, quita margin auto para alinearlas en la fila */
+.row-images .img-item {
+    margin: 0;
+}
+
+/* Responsive: en pantallas pequeñas, apilar las imágenes */
+@media (max-width: 600px) {
+    .row-images {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .row-images .img-item {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+
+/* Distribución visual similar a la imagen original */
+.offset-1 { margin-left: 15%; }
+.offset-3 { margin-left: 70%; }
+
+
+@media (max-width: 768px) {
+.gallery-wrapper { width: 90%; }
+.offset-1, .offset-2, .offset-3 {
+margin-left: 0 !important;
+}
+.img-item {
+width: 100%;
+}
+}
