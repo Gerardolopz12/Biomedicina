@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="/BioEI/Servicio/Service.css">
 
 <section class="servicio-section">
@@ -30,7 +31,7 @@
         <img src="/BioEI/Images/Predictivo.jpg" alt="Predictivo">
         <div class="texto-lateral">
             <h3>Predictivo</h3>
-            <p class="subtexto">Tipo de servicio que se desprende del mantenimiento preventivo donde se valora el tiempo de vida útil de una refacción o sistema para poder programar su corrección</p>
+            <p class="subtexto">Tipo de servicio que se desprende del mantenimiento preventivo donde se valora el tiempo de vida útil de una refacción o sistema para poder programar su corrección</p>
         </div>
     </div>
 
